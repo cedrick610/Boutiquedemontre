@@ -3,8 +3,7 @@ session_start();
 include("function.php");
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
 <?php
 include('./head.php');
 ?>
@@ -18,16 +17,16 @@ include('./head.php');
 
       "<div class=\"row row-cols-2 row-cols-lg-5 g-2 g-lg-3\"width: 5rem;\">
      <div class=\"col\">
-     <img class=\"\" src=\"images/" . $article['picture'] . "\" alt=\"Card image cap\">
+     <img class=\"card-img-top\" src=\"images/" . $article['image'] . "\" alt=\"Card image cap\">
      </div>
      <div class=\"col\">
-     <h5 class=\"\">${article['name']}</h5>
+     <h5 class=\"\">${article['nom']}</h5>
      </div>
      <div class=\"col\">
      <p class=\"\">" . $article['description'] . "</p>
      </div>
      <div class=\"col\">
-     <p class=\"\">" . $article['price'] . " €</p>
+     <p class=\"\">" . $article['prix'] . " €</p>
      </div>
      <div class=\"col\">
      <form action=\"panier.php\" method=\"post\">

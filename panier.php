@@ -25,6 +25,19 @@ if (isset($_POST["quantity"])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body>
+  
+</body>
+</html>
 <?php
 include('./head.php');
 ?>
@@ -40,16 +53,16 @@ include('./head.php');
 
       "<div class=\"row row-cols-2 row-cols-lg-5 g-2 g-lg-3\"width: 5rem;\">
      <div class=\"col\">
-     <img class=\"\" src=\"images/" . $article['picture'] . "\" alt=\"Card image cap\">
+     <img class=\"\" src=\"images/" . $article['image'] . "\" alt=\"Card image cap\">
      </div>
      <div class=\"col\">
-     <h5 class=\"\">${article['name']}</h5>
+     <h5 class=\"\">${article['nom']}</h5>
      </div>
      <div class=\"col\">
      <p class=\"\">" . $article['description'] . "</p>
      </div>
      <div class=\"col\">
-     <p class=\"\">" . $article['price'] . " €</p>
+     <p class=\"\">" . $article['prix'] . " €</p>
      </div>
      <div class=\"col\">
      <form action=\"panier.php\" method=\"post\">

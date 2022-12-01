@@ -3,8 +3,7 @@ session_start();
 include("function.php");
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
 <?php
 include('./head.php');
 ?>
@@ -19,12 +18,12 @@ $article = getArticleFromId($id);
 
 
 <div class="card" style="width: 18rem;">
-  <img src="images/<?php echo $article["picture"]?>.." class="card-img-top" alt="...">
+  <img src="images/<?php echo $article["image"]?>.." class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $article['name'] ?></h5>
-    <h4><?php echo $article['price'] ?></h4>
+    <h5 class="card-title"><?php echo $article['nom'] ?></h5>
+    <h4><?php echo $article['prix'] ?></h4>
     <h5 class="card-text"><?php echo $article['description'] ?></h5>
-    <p><?php echo $article['detailedDescription'] ?></p>
+    <p><?php echo $article['description_detaillee'] ?></p>
     <a href="#" class="btn btn-primary">Ajouter au panier</a>
   </div>
 </div>

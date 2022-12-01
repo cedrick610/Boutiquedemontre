@@ -6,8 +6,24 @@ creationPanier()
 <!DOCTYPE html>
 <html lang="en">
 <?php
+
+
+if (isset($_POST['email'])) {
+  if (!isset($_SESSION['id'])) {
+      connexion();
+  } else {
+      echo "<script>alert(\"Vous êtes déjà connecté !\")</script>";
+  }
+}
 include('./head.php');
+
+if (isset($_POST['deconnexion'])){
+  logOut();
+}
 ?>
+
+
+
 
 <body>
 
@@ -15,7 +31,8 @@ include('./head.php');
   <div class="container ">
     <div class="row text-center justify-content-center">
       <?php
-      showArticles();
+    $articles = getArticles();
+     showArticles($articles);
       ?>
     </div>
   </div>

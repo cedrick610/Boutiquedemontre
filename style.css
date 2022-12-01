@@ -1,13 +1,23 @@
-nav {
-    display: flex;
-    justify-content: space-evenly;
+body{
+ background-attachment: fixed;
+ background-image: url(images/sable.jpg);
 }
 
 
 
-.nav-link a{
+
+.container-fluid-div{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.navbar-brand img{
+width: 100px;
+}
+
+
+.nav-link a{
+    font-weight: 600;
 }
 
 .validation{
@@ -68,4 +78,163 @@ justify-content: baseline;
   display: flex;
   justify-content: center;
   
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+}
+
+h5{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.games-div h4{
+    margin-top: 5%;
+    font-weight: 600;
+  font-style: italic;
+   
+}
+
+form{
+    
+    margin-top: 5%;
+}
+
+.form-control{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-solid fa-key{
+    display: flex;
+  align-items: center;
+  
+}
+
+
+.row g-3 align-items-center{
+    display: flex;
+    justify-content: center;
+}
+
+.connection{
+    margin-top: 5%;
+
+}
+
+.connection_div{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.button1_connect{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.connection-div{
+    text-align: center;
+}
+
+
+.button2_connect{
+    display: flex;
+    justify-content: center;
+}
+
+
+.modif-comptes h4{
+    margin-top: 5%;
+}
+
+h4{
+    text-align: center;
+}
+
+.modif-div{
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+
+.modif-div button{
+    margin: 20px;
+}
+
+.modif-div i{
+    display: flex;
+    justify-content: center;
+}
+
+.modifmotdepasse{
+display: flex;
+justify-content: center;
+}
+
+.modifmotdepasse-div{
+display: flex;
+justify-content: center;
+margin-top: 5%;
+}
+
+.modifmotdepasse-div button{
+    margin: 20px;
+}
+
+.modifmotdepasse{
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+
+.modifinfo-full h5{
+margin-top: 5%;
+margin-bottom: 5%;
+}
+
+
+.modifinfo-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  
+}
+
+.modifinfo-div button{
+margin: 20px;
+}
+
+.modifinfo_btn{
+display:flex ;
+justify-content: center;
+margin-top: 20px;
+}
+
+
+.modifmonadresse-div{
+display: flex;
+justify-content: center;
+}
+
+.modifmonadresse-div button{
+margin: 20px;
+}
+
+
+.modifadresse{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.modifadresse-full{
+display: flex;
+justify-content: center;
+}
+
+
+footer{
+    background-color: black;
 }
